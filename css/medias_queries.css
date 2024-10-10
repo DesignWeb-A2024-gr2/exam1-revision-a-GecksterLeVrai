@@ -59,3 +59,32 @@ article {
 .image img{
     width: 200px;
 }
+@media print  {
+    .pub{
+    display: none;
+    }
+    #main_container{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 120px 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "header header header"
+            ". article ."
+            " . image .";
+    
+        padding: 10px;
+        margin: 0px 100px;
+    }
+    article{
+        min-width: 464.44px;
+        
+    }
+    .ddd{
+        display: block;
+    }
+   
+    
+    
+    
+}
